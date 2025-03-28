@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+script.js
+style.css
+data.csv
+annotations.md 
