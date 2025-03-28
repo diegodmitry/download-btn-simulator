@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(45deg, #CC6B1A, #FFB347);
+  color: #FFFFFF;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw; /* viewport width */
+  position: relative; /* Ensure pseudo-element is positioned correctly */
+  overflow: hidden; /* Prevent pseudo-element from overflowing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.option-3 {
+  background-color: #333;
+  color: #FFF;
+  width: 150px; /* Set width for circular shape */
+  height: 150px; /* Set height for circular shape */
+  font-size: 1.3rem;
+  border-radius: 50%; /* Make the button circular */
+  border: none; /* Remove border */
+  display: flex; /* Align text in center */
+  justify-content: center;
+  align-items: center;
+}
