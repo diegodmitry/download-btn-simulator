@@ -1,0 +1,19 @@
+{
+  "name": "download-btn-simulator",
+  "version": "1.0.0",
+  "description": "This project demonstrates a simple web page with a button that simulates a download process. When the user clicks the button, it becomes disabled and displays a \"Downloading...\" message for a few seconds before re-enabling.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify-js": "terser script.js -o dist/script.min.js",
+    "minify-css": "cleancss -o dist/style.min.css style.css",
+    "minify": "npm run minify-js && npm run minify-css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.29.2"
+  }
+}
