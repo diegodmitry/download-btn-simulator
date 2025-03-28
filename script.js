@@ -18,5 +18,5 @@ downloadBtn.addEventListener('click', function() {
   setTimeout(function() {
     downloadBtn.disabled = false;
     downloadBtn.textContent = 'Download';
-  }, 4000);
+  }, 2000);
 });
