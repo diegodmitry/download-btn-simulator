@@ -5,15 +5,17 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minify-js": "terser script.js -o dist/script.min.js",
+    "minify-js": "terser script.js -o dist/script.temp.js",
+    "obfuscate-js": "javascript-obfuscator dist/script.temp.js --output dist/script.min.js && rm dist/script.temp.js",
     "minify-css": "cleancss -o dist/style.min.css style.css",
-    "minify": "npm run minify-js && npm run minify-css"
+    "minify": "npm run minify-js && npm run obfuscate-js && npm run minify-css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "clean-css-cli": "^5.6.3",
+    "javascript-obfuscator": "^5.1.1",
     "terser": "^5.29.2"
   }
 }
